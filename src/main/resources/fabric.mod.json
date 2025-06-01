@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "friendlyblazesmod",
+	"version": "${version}",
+	"name": "Friendly Blazes Mod",
+	"description": "What if you didn't need to fight blazes for blaze rods? What if these fiery mobs could be loyal companions that can provide you with the same love as your pet dogs and cats? Introducing the Friendly Blazes mod, where blazes give you drops, defend you, and can power furnaces!",
+	"authors": [
+		"Khiem"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/khiemdam/friendly-blazes-mod-mc"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/friendlyblazesmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.khiem.friendlyblazesmod.FriendlyBlazesMod"
+		],
+		"fabric-datagen": [
+			"net.khiem.friendlyblazesmod.FriendlyBlazesModDataGenerator"
+		],
+		"client": [
+			"net.khiem.friendlyblazesmod.FriendlyBlazesModClient"
+		]
+	},
+	"mixins": [
+		"friendlyblazesmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
