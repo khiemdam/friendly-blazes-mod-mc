@@ -11,6 +11,7 @@
 ![Website Image2](/readme_images/blaze_block_in_menu.png)
 
 ## Table of Contents
+* [Mod Overview](#mod-overview)
 * [Motivation](#motivation)
 * [Technologies](#technologies)
 * [Installation](#installation)
@@ -19,6 +20,9 @@
 * [Status](#status)
 * [Notes](#notes)
 * [Credits](#credits)
+
+## Mod Overview
+***TODO***
 
 ## Motivation
 I have been a big fan of Minecraft over the years it has existed, and have always wanted to dip my toes into the game development space. I wanted to do this project to learn the Minecraft Fabric API and dive into the world of Minecraft modding. Regardless of if a mod like this already exists, I am doing it for learning purposes.
@@ -73,6 +77,8 @@ Currently working on the project! Learned how to add items to minecraft through 
 - (6/1/2025) Reading the Fabric wiki and copying their Blocks.register function, I was able to add the Blaze Block, which will be crafted from 9 Blaze Bottles
   - ![Website Image](/readme_images/blaze_next_to_block.png)
   - When creating a block, you can adjust various "Settings," like luminance, sound effects, and strength. I made the Blaze Block a lighting block that sounds like glass when broken
+- (6/1/2025) Implemented an item group for Blaze related items for my mod
+  - ![Website Image](/readme_images/blaze_item_group.png)
 
 ## Credits
 * [Fabric Modding Docs](https://wiki.fabricmc.net/tutorial:start)

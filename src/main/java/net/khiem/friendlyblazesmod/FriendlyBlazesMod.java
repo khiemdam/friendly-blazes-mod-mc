@@ -3,6 +3,7 @@ package net.khiem.friendlyblazesmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.khiem.friendlyblazesmod.block.ModBlocks;
+import net.khiem.friendlyblazesmod.item.ModItemGroups;
 import net.khiem.friendlyblazesmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +14,8 @@ public class FriendlyBlazesMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}

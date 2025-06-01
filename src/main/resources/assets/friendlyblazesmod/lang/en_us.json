@@ -1,4 +1,7 @@
 {
   "item.friendlyblazesmod.blaze_bottle": "Blaze Bottle",
-  "block.friendlyblazesmod.blaze_block": "Blaze Block"
+
+  "block.friendlyblazesmod.blaze_block": "Blaze Block",
+
+  "itemgroup.friendlyblazesmod.blaze_items": "Blaze Items"
 }

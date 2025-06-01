@@ -30,17 +30,6 @@ public class ModBlocks {
                     .instrument(NoteBlockInstrument.HAT)
                     .sounds(BlockSoundGroup.GLASS));
 
-//    private static Block registerBlock(String name, Block block) {
-//        registerBlockItem(name, block);
-//        return Registry.register(Registries.BLOCK, Identifier.of(FriendlyBlazesMod.MOD_ID, name), block);
-//    }
-//
-//    private static void registerBlockItem(String name, Block block) {
-//        Registry.register(Registries.ITEM, Identifier.of(FriendlyBlazesMod.MOD_ID, name),
-//                new BlockItem(block, new Item.Settings()));
-//
-//    }
-
     private static Block register(String path, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
         final Identifier identifier = Identifier.of(FriendlyBlazesMod.MOD_ID, path);
         final RegistryKey<Block> registryKey = RegistryKey.of(RegistryKeys.BLOCK, identifier);
