@@ -8,6 +8,7 @@
 ### What if you didn't need to fight blazes for blaze rods? What if these fiery mobs could be loyal companions that can provide you with the same love as your pet dogs and cats? Introducing the Friendly Blazes mod, where blazes give you drops, defend you, and can power furnaces!
 
 ![Website Image](/readme_images/blaze_bottle_in_inventory.png)
+![Website Image2](/readme_images/blaze_block_in_menu.png)
 
 ## Table of Contents
 * [Motivation](#motivation)
@@ -47,12 +48,12 @@ git clone https://github.com/khiemdam/friendly-blazes-mod-mc.git
 - Add items/blocks
   - [X] Blaze Bottle (crafting item)
   - [ ] Blaze Flower (taming item/block)
-  - [ ] Blaze Block (lighting block)
+  - [X] Blaze Block (lighting block)
 - Add textures for items and blocks
   - [X] Blaze Bottle
   - [ ] Blaze Flower
-  - [ ] Blaze Block
-- Add item/block functionality
+  - [X] Blaze Block
+- Add item/block functionality, crafting, and/or loot table drop
   - [ ] Blaze Bottle
   - [ ] Blaze Flower
   - [ ] Blaze Block
@@ -69,9 +70,13 @@ Currently working on the project! Learned how to add items to minecraft through 
 - (5/31/2025) After a lot of trial and error, and a lot of reading...
   - ![Website Image](/readme_images/blaze_bottle_in_hand.png)
   - I added my first item! This works because when Minecraft is initialized, we add a new item (with its own id) to the registry, and we can also add the item to different categories (resource, redstone, etc.). The item I added is currently not functional...
+- (6/1/2025) Reading the Fabric wiki and copying their Blocks.register function, I was able to add the Blaze Block, which will be crafted from 9 Blaze Bottles
+  - ![Website Image](/readme_images/blaze_next_to_block.png)
+  - When creating a block, you can adjust various "Settings," like luminance, sound effects, and strength. I made the Blaze Block a lighting block that sounds like glass when broken
 
 ## Credits
 * [Fabric Modding Docs](https://wiki.fabricmc.net/tutorial:start)
+* [Fabric API Docs](https://maven.fabricmc.net/docs)
 * [Social Icons](https://fontawesome.com/)
 
 <!-- Links & Images -->
