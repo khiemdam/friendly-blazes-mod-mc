@@ -61,7 +61,7 @@ git clone https://github.com/khiemdam/friendly-blazes-mod-mc.git
 - Add item/block functionality, crafting, and/or loot table drop
   - [ ] Blaze Bottle
   - [ ] Blaze Flower
-  - [ ] Blaze Block
+  - [X] Blaze Block
 - [ ] Add Tamed blaze mob
 - Add new mob behavior
   - [ ] Blaze mob can be interacted by clicking with Blaze Flower
