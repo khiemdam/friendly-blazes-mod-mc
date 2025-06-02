@@ -88,10 +88,9 @@ Currently working on the project! Working on tamed blaze entity...
 - (6/2/2025) Blaze Flower w/ Collision Behavior
   - Finally added the Blaze Flower!!!
   - Took a long time to implement, but I basically needed to make a new class that extends the FlowerBlock class, then override the FlowerBlock class with a custom onEntityCollision behavior ;-;
-  - When walking over the flower, you take damage, like a sweet berry bush
+  - When walking over the flower, you take damage, like a sweet berry bush. You also are ignited, like if you were to walk in fire.
   - Basically used the same logic as the berry bush
-  - Need to make a texture still...
-  - ![Website Image](/readme_images/blaze_flower.png)
+  - ![Website Image](/readme_images/blaze_flower_planted.png)
   - ![Website Image](/readme_images/blaze_flower_damage.png)
 
 ## Credits

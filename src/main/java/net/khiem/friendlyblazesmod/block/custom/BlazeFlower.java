@@ -2,10 +2,7 @@ package net.khiem.friendlyblazesmod.block.custom;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FlowerBlock;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityCollisionHandler;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.*;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.server.world.ServerWorld;
@@ -34,5 +31,7 @@ public class BlazeFlower extends FlowerBlock {
                 }
             }
         }
+        handler.addEvent(CollisionEvent.FIRE_IGNITE);
+        handler.addPostCallback(CollisionEvent.FIRE_IGNITE, entityx -> entityx.serverDamage(entityx.getWorld().getDamageSources().inFire(), 1));
     }
 }
