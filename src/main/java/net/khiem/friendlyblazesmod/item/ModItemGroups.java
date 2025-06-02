@@ -20,6 +20,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.BLAZE_BOTTLE);
                         entries.add(ModBlocks.BLAZE_BLOCK);
+                        entries.add(ModBlocks.BLAZE_FLOWER);
                         entries.add(Items.BLAZE_ROD);
                         entries.add(Items.BLAZE_POWDER);
                     })

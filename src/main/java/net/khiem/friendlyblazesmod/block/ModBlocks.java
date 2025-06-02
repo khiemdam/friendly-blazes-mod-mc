@@ -2,11 +2,11 @@ package net.khiem.friendlyblazesmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.khiem.friendlyblazesmod.FriendlyBlazesMod;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.MapColor;
+import net.khiem.friendlyblazesmod.block.custom.BlazeFlower;
+import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
+import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -29,6 +29,17 @@ public class ModBlocks {
                     .luminance(state -> 15)
                     .instrument(NoteBlockInstrument.HAT)
                     .sounds(BlockSoundGroup.GLASS));
+
+    public static final Block BLAZE_FLOWER = register(
+            "blaze_flower",settings -> new BlazeFlower(StatusEffects.FIRE_RESISTANCE, 0.35F, settings),
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DARK_CRIMSON)
+                    .ticksRandomly()
+                    .noCollision()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.SWEET_BERRY_BUSH)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+	);
 
     private static Block register(String path, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
         final Identifier identifier = Identifier.of(FriendlyBlazesMod.MOD_ID, path);

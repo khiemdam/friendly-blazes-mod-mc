@@ -84,6 +84,14 @@ Currently working on the project! Added recipe for Blaze Block, will work on mak
 - (6/2/2025)
   - Minecraft 1.21.5 changed a lot of syntax, which makes it a lot harder to find documentation online. When you want to make a custom crafting recipe, you need to add a key as so:
   - "key": { "#" "modname/minecraft:item" }
+- (6/2/2025)
+  - Finally added the Blaze Flower!!!
+  - Took a long time to implement, but I basically needed to make a new class that extends the FlowerBlock class, then override the FlowerBlock class with a custom onEntityCollision behavior ;-;
+  - When walking over the flower, you take damage, like a sweet berry bush
+  - Basically used the same logic as the berry bush
+  - Need to make a texture still...
+  - ![Website Image](/readme_images/blaze_flower.png)
+  - ![Website Image](/readme_images/blaze_flower_damage.png)
 
 ## Credits
 * [Fabric Modding Docs](https://wiki.fabricmc.net/tutorial:start)
