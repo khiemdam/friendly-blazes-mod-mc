@@ -52,7 +52,7 @@ git clone https://github.com/khiemdam/friendly-blazes-mod-mc.git
 - ***TODO: Write TODO List***
 - Add items/blocks
   - [X] Blaze Bottle (crafting item)
-  - [ ] Blaze Flower (taming item/block)
+  - [X] Blaze Flower (taming item/block)
   - [X] Blaze Block (lighting block)
 - Add textures for items and blocks
   - [X] Blaze Bottle
@@ -69,7 +69,7 @@ git clone https://github.com/khiemdam/friendly-blazes-mod-mc.git
   - [ ] Tamed blaze can be interacted by clicking with empty bottle
 
 ## Status
-Currently working on the project! Added recipe for Blaze Block, will work on making Blaze Flower and texture.
+Currently working on the project! Working on Blaze Flower texture and tamed blaze entity...
 
 ## Notes
 ***TODO: Explain important moments/steps taken in the project when the time comes...***
