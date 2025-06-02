@@ -3,12 +3,12 @@
 [![LinkedIn][linkedin-shield]][linkedin-url] ![Status][status-shield]
 <!-- [![Handshake][handshake-shield]][handshake-url]  -->
 
-# Friendly Blazes Fabric Mod for Minecraft
+# Friendly Blazes Fabric Mod for Minecraft 1.21.5
 
 ### What if you didn't need to fight blazes for blaze rods? What if these fiery mobs could be loyal companions that can provide you with the same love as your pet dogs and cats? Introducing the Friendly Blazes mod, where blazes give you drops, defend you, and can power furnaces!
 
 ![Website Image](/readme_images/blaze_bottle_in_inventory.png)
-![Website Image2](/readme_images/blaze_block_in_menu.png)
+![Website Image2](/readme_images/blaze_block_crafting.png)
 
 ## Table of Contents
 * [Mod Overview](#mod-overview)
@@ -28,6 +28,7 @@
 I have been a big fan of Minecraft over the years it has existed, and have always wanted to dip my toes into the game development space. I wanted to do this project to learn the Minecraft Fabric API and dive into the world of Minecraft modding. Regardless of if a mod like this already exists, I am doing it for learning purposes.
 
 ## Technologies
+* Minecraft 1.21.5 with Fabric Loader 0.16.14
 * Adoptium Temurin JDK
 * IntelliJ IDEA Community Edition (or your favorite Java IDE)
 * ***TODO: Add additional technologies***
@@ -61,13 +62,14 @@ git clone https://github.com/khiemdam/friendly-blazes-mod-mc.git
   - [ ] Blaze Bottle
   - [ ] Blaze Flower
   - [ ] Blaze Block
+- [ ] Add Tamed blaze mob
 - Add new mob behavior
-  - [ ] Tamed blaze mob
+  - [ ] Blaze mob can be interacted by clicking with Blaze Flower
   - [ ] Tamed blaze heats up nearby furnaces
   - [ ] Tamed blaze can be interacted by clicking with empty bottle
 
 ## Status
-Currently working on the project! Learned how to add items to minecraft through the registry.
+Currently working on the project! Added recipe for Blaze Block, will work on making Blaze Flower and texture.
 
 ## Notes
 ***TODO: Explain important moments/steps taken in the project when the time comes...***
@@ -79,6 +81,9 @@ Currently working on the project! Learned how to add items to minecraft through 
   - When creating a block, you can adjust various "Settings," like luminance, sound effects, and strength. I made the Blaze Block a lighting block that sounds like glass when broken
 - (6/1/2025) Implemented an item group for Blaze related items for my mod
   - ![Website Image](/readme_images/blaze_item_group.png)
+- (6/2/2025)
+  - Minecraft 1.21.5 changed a lot of syntax, which makes it a lot harder to find documentation online. When you want to make a custom crafting recipe, you need to add a key as so:
+  - "key": { "#" "modname/minecraft:item" }
 
 ## Credits
 * [Fabric Modding Docs](https://wiki.fabricmc.net/tutorial:start)
