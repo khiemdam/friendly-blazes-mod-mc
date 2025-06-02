@@ -33,8 +33,9 @@ public class ModBlocks {
     public static final Block BLAZE_FLOWER = register(
             "blaze_flower",settings -> new BlazeFlower(StatusEffects.FIRE_RESISTANCE, 0.35F, settings),
             AbstractBlock.Settings.create()
-                    .mapColor(MapColor.DARK_CRIMSON)
+                    .mapColor(MapColor.ORANGE)
                     .ticksRandomly()
+                    .nonOpaque()
                     .noCollision()
                     .breakInstantly()
                     .sounds(BlockSoundGroup.SWEET_BERRY_BUSH)

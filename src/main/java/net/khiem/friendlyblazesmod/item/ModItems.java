@@ -2,6 +2,8 @@ package net.khiem.friendlyblazesmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.khiem.friendlyblazesmod.FriendlyBlazesMod;
+import net.khiem.friendlyblazesmod.block.ModBlocks;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;

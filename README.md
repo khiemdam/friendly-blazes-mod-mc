@@ -8,7 +8,8 @@
 ### What if you didn't need to fight blazes for blaze rods? What if these fiery mobs could be loyal companions that can provide you with the same love as your pet dogs and cats? Introducing the Friendly Blazes mod, where blazes give you drops, defend you, and can power furnaces!
 
 ![Website Image](/readme_images/blaze_bottle_in_inventory.png)
-![Website Image2](/readme_images/blaze_block_crafting.png)
+![Website Image](/readme_images/blaze_block_crafting.png)
+![Website Image](/readme_images/blaze_flower_planted.png)
 
 ## Table of Contents
 * [Mod Overview](#mod-overview)
@@ -56,10 +57,10 @@ git clone https://github.com/khiemdam/friendly-blazes-mod-mc.git
   - [X] Blaze Block (lighting block)
 - Add textures for items and blocks
   - [X] Blaze Bottle
-  - [ ] Blaze Flower
+  - [X] Blaze Flower
   - [X] Blaze Block
 - Add item/block functionality, crafting, and/or loot table drop
-  - [ ] Blaze Bottle
+  - [X] Blaze Bottle
   - [ ] Blaze Flower
   - [X] Blaze Block
 - [ ] Add Tamed blaze mob
@@ -69,7 +70,7 @@ git clone https://github.com/khiemdam/friendly-blazes-mod-mc.git
   - [ ] Tamed blaze can be interacted by clicking with empty bottle
 
 ## Status
-Currently working on the project! Working on Blaze Flower texture and tamed blaze entity...
+Currently working on the project! Working on tamed blaze entity...
 
 ## Notes
 ***TODO: Explain important moments/steps taken in the project when the time comes...***
@@ -81,10 +82,10 @@ Currently working on the project! Working on Blaze Flower texture and tamed blaz
   - When creating a block, you can adjust various "Settings," like luminance, sound effects, and strength. I made the Blaze Block a lighting block that sounds like glass when broken
 - (6/1/2025) Implemented an item group for Blaze related items for my mod
   - ![Website Image](/readme_images/blaze_item_group.png)
-- (6/2/2025)
+- (6/2/2025) Custom Recipes
   - Minecraft 1.21.5 changed a lot of syntax, which makes it a lot harder to find documentation online. When you want to make a custom crafting recipe, you need to add a key as so:
   - "key": { "#" "modname/minecraft:item" }
-- (6/2/2025)
+- (6/2/2025) Blaze Flower w/ Collision Behavior
   - Finally added the Blaze Flower!!!
   - Took a long time to implement, but I basically needed to make a new class that extends the FlowerBlock class, then override the FlowerBlock class with a custom onEntityCollision behavior ;-;
   - When walking over the flower, you take damage, like a sweet berry bush
