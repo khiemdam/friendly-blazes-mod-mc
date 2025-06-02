@@ -32,7 +32,6 @@ I have been a big fan of Minecraft over the years it has existed, and have alway
 * Minecraft 1.21.5 with Fabric Loader 0.16.14
 * Adoptium Temurin JDK
 * IntelliJ IDEA Community Edition (or your favorite Java IDE)
-* ***TODO: Add additional technologies***
 
 ## Installation
 Navigate to your desired directory. In your shell/terminal, type in the following:
@@ -73,7 +72,6 @@ git clone https://github.com/khiemdam/friendly-blazes-mod-mc.git
 Currently working on the project! Working on tamed blaze entity...
 
 ## Notes
-***TODO: Explain important moments/steps taken in the project when the time comes...***
 - (5/31/2025) After a lot of trial and error, and a lot of reading...
   - ![Website Image](/readme_images/blaze_bottle_in_hand.png)
   - I added my first item! This works because when Minecraft is initialized, we add a new item (with its own id) to the registry, and we can also add the item to different categories (resource, redstone, etc.). The item I added is currently not functional...
